@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="assets/profile.jpg.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashion Sale | Saira Nasir</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .fashion-page {
+            min-height: 100vh;
+            background: #0b0b0a;
+            color: #f5f1e8;
+            padding: 120px 6% 80px;
+        }
+
+        .fashion-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .fashion-header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 60px;
+            margin: 10px 0 20px;
+        }
+
+        .fashion-header h1 span {
+            color: #c9a35b;
+            font-style: italic;
+        }
+
+        .fashion-header p {
+            color: #aaa39a;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #c9a35b;
+            border: 1px solid #c9a35b;
+            padding: 10px 18px;
+            margin-bottom: 40px;
+        }
+
+        .back-button:hover {
+            background: #c9a35b;
+            color: #111;
+        }
+
+        .fashion-gallery {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .fashion-card {
+            background: #151412;
+            border: 1px solid #393229;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .fashion-card:hover {
+            transform: translateY(-6px);
+            border-color: #c9a35b;
+        }
+
+        .fashion-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .fashion-card-info {
+            padding: 18px;
+        }
+
+        .fashion-card-info small {
+            color: #c9a35b;
+            letter-spacing: 2px;
+        }
+
+        .fashion-card-info h3 {
+            margin-top: 5px;
+            font-family: "Playfair Display", serif;
+        }
+
+        @media(max-width: 800px) {
+            .fashion-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 550px) {
+            .fashion-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .fashion-header h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="fashion-page">
+
+    <div class="fashion-header">
+
+        <a href="index.html#projects" class="back-button">
+            ← Back to Portfolio
+        </a>
+
+        <p class="eyebrow">GRAPHIC DESIGN • 01</p>
+
+        <h1>Fashion <span>Sale</span></h1>
+
+        <p>
+            A collection of fashion sale designs created for
+            promotional and social media campaigns.
+        </p>
+
+    </div>
+
+
+    <div class="fashion-gallery">
+
+        <div class="fashion-card">
+            <img src="assets/fasion1.jpg.png" alt="Fashion Sale Design 1">
+            <div class="fashion-card-info">
+                <small>DESIGN 01</small>
+                <h3>Fashion Sale Post</h3>
+            </div>
+        </div>
+
+        <div class="fashion-card">
+            <img src="assets/fasion 2.jpg.png" alt="Fashion Sale Design 2">
+            <div class="fashion-card-info">
+                <small>DESIGN 02</small>
+                <h3>Fashion Promotion</h3>
+            </div>
+        </div>
+
+        <div class="fashion-card">
+            <img src="assets/fasion 3.jpg.png" alt="Fashion Sale Design 3">
+            <div class="fashion-card-info">
+                <small>DESIGN 03</small>
+                <h3>Sale Campaign</h3>
+            </div>
+        </div>
+
+        <div class="fashion-card">
+            <img src="assets/fasion 4.jpg.png" alt="Fashion Sale Design 4">
+            <div class="fashion-card-info">
+                <small>DESIGN 04</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+
+        <div class="fashion-card">
+            <img src="assets/fasion 5.jpg.png" alt="Fashion Sale Design 5">
+            <div class="fashion-card-info">
+                <small>DESIGN 05</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+
+        <div class="fashion-card">
+            <img src="assets/fasion 6.jpg.png" alt="Fashion Sale Design 6">
+            <div class="fashion-card-info">
+                <small>DESIGN 06</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+         <div class="fashion-card">
+            <img src="assets/fasion 7.jpg.png" alt="Fashion Sale Design 6">
+            <div class="fashion-card-info">
+                <small>DESIGN 06</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+         <div class="fashion-card">
+            <img src="assets/Fashion Sale Collection.png" alt="Fashion Sale Design 6">
+            <div class="fashion-card-info">
+                <small>DESIGN 06</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+         <div class="fashion-card">
+            <img src="assets/fasion sale.png" alt="Fashion Sale Design 6">
+            <div class="fashion-card-info">
+                <small>DESIGN 06</small>
+                <h3>Fashion Advertisement</h3>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+</body>
+</html>

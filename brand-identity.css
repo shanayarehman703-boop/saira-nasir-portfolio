@@ -1,0 +1,475 @@
+/* =========================================
+   BRAND IDENTITY PORTFOLIO
+   BLACK + GOLDEN THEME
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background: #080808;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #050505;
+    border-bottom: 1px solid #d4af37;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d4af37;
+}
+
+.header nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #dddddd;
+
+    font-size: 17px;
+
+    transition: 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #d4af37;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.86),
+            rgba(0, 0, 0, 0.94)
+        ),
+        url("assets/luxury.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.small-title {
+    color: #d4af37;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    color: #ffffff;
+
+    font-size: clamp(48px, 7vw, 78px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #d4af37;
+}
+
+.hero-content > p:not(.small-title) {
+    max-width: 600px;
+
+    color: #aaaaaa;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   VIEW BUTTON
+   ========================================= */
+
+.view-btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #d4af37;
+    color: #080808;
+
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.view-btn:hover {
+    background: transparent;
+    color: #d4af37;
+}
+
+/* =========================================
+   DESIGNS SECTION
+   ========================================= */
+
+.designs {
+    padding: 90px 8%;
+
+    background: #0b0b0b;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    color: #d4af37;
+
+    font-size: 43px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #999999;
+
+    font-size: 17px;
+}
+
+/* =========================================
+   DESIGN GRID
+   ========================================= */
+
+.design-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+/* =========================================
+   DESIGN CARDS
+   ========================================= */
+
+.design-card {
+    background: #111111;
+
+    border: 1px solid #292929;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 12px 30px rgba(212, 175, 55, 0.13);
+}
+
+/* =========================================
+   DESIGN IMAGE
+   ========================================= */
+
+.design-image {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #181818;
+}
+
+.design-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.design-card:hover .design-image img {
+    transform: scale(1.04);
+}
+
+/* =========================================
+   DESIGN INFO
+   ========================================= */
+
+.design-info {
+    padding: 22px;
+}
+
+.design-info span {
+    display: inline-block;
+
+    color: #d4af37;
+
+    border: 1px solid #d4af37;
+
+    padding: 4px 9px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 13px;
+
+    border-radius: 2px;
+}
+
+.design-info h3 {
+    color: #ffffff;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.design-info p {
+    color: #999999;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+/* =========================================
+   FEATURED CARD
+   ========================================= */
+
+.design-card.featured {
+    border-color: #8f7622;
+}
+
+.design-card.featured:hover {
+    border-color: #d4af37;
+
+    box-shadow:
+        0 12px 35px rgba(212, 175, 55, 0.2);
+}
+
+.design-card.featured .design-info span {
+    background: #d4af37;
+    color: #080808;
+}
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+.about {
+    padding: 90px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: #050505;
+
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.about h2 {
+    color: #ffffff;
+
+    font-size: 43px;
+
+    line-height: 1.2;
+}
+
+.about h2::first-line {
+    color: #ffffff;
+}
+
+.about > p {
+    color: #aaaaaa;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 27px 20px;
+
+    text-align: center;
+
+    background: #050505;
+
+    border-top: 1px solid #d4af37;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .design-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .designs,
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        min-height: auto;
+
+        padding: 18px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .header nav {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .header nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .designs {
+        padding: 70px 7%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .design-image {
+        height: 330px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 70px 7%;
+    }
+
+    .about h2 {
+        font-size: 34px;
+    }
+}

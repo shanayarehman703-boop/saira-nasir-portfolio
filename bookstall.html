@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" type="image/png" href="assets/profile.jpg.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner Book Stall</title>
+    <link rel="stylesheet" href="bookstall.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="bookstall.html" class="logo">Page<span>Turner</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn">
+        🛒 Cart <span id="cartCount">0</span>
+    </button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">YOUR NEXT GREAT READ</p>
+        <h1>Stories that stay<br><span>with you.</span></h1>
+        <p>Discover fiction, self-development, technology and more at prices made for readers.</p>
+        <a href="#books" class="primary-btn">Shop Books</a>
+    </div>
+</section>
+
+<section class="books-section" id="books">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h2 stye>Popular Books</h2>
+        </div>
+        <input type="search" id="searchInput" placeholder="Search books...">
+    </div>
+
+    <div class="categories">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="fiction">Fiction</button>
+        <button class="filter" data-category="education">Education</button>
+        <button class="filter" data-category="self-help">Self Help</button>
+        <button class="filter" data-category="technology">Technology</button>
+    </div>
+
+    <div class="book-grid" id="bookGrid">
+
+        <article class="book-card" data-category="fiction" data-title="The Silent Garden">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=80" alt="The Silent Garden book">
+            <div class="book-info">
+                <span class="tag">Fiction</span>
+                <h3>The Silent Garden</h3>
+                <p>A beautifully written story of hope, friendship and new beginnings.</p>
+                <div class="book-bottom">
+                    <strong>$14.99</strong>
+                    <button class="add-btn" data-name="The Silent Garden" data-price="14.99">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-category="education" data-title="Learn Smarter">
+            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=700&q=80" alt="Learn Smarter book">
+            <div class="book-info">
+                <span class="tag">Education</span>
+                <h3>Learn Smarter</h3>
+                <p>Practical study strategies to help students learn with confidence.</p>
+                <div class="book-bottom">
+                    <strong>$11.50</strong>
+                    <button class="add-btn" data-name="Learn Smarter" data-price="11.50">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-category="self-help" data-title="The Better Day">
+            <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=700&q=80" alt="The Better Day book">
+            <div class="book-info">
+                <span class="tag">Self Help</span>
+                <h3>The Better Day</h3>
+                <p>A simple guide to building productive habits and a positive routine.</p>
+                <div class="book-bottom">
+                    <strong>$12.99</strong>
+                    <button class="add-btn" data-name="The Better Day" data-price="12.99">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-category="technology" data-title="Web Design Basics">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80" alt="Web Design Basics book">
+            <div class="book-info">
+                <span class="tag">Technology</span>
+                <h3>Web Design Basics</h3>
+                <p>Start learning HTML, CSS and JavaScript through practical examples.</p>
+                <div class="book-bottom">
+                    <strong>$18.00</strong>
+                    <button class="add-btn" data-name="Web Design Basics" data-price="18.00">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-category="fiction" data-title="Moonlight Letters">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Moonlight Letters book">
+            <div class="book-info">
+                <span class="tag">Fiction</span>
+                <h3>Moonlight Letters</h3>
+                <p>A warm collection of stories about memories, courage and change.</p>
+                <div class="book-bottom">
+                    <strong>$13.50</strong>
+                    <button class="add-btn" data-name="Moonlight Letters" data-price="13.50">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-category="education" data-title="Computer Science Essentials">
+            <img src="assets/book.jpg" alt="Computer Science Essentials book">
+            <div class="book-info">
+                <span class="tag">Education</span>
+                <h3>Computer Science Essentials</h3>
+                <p>Core concepts explained simply for students and beginners.</p>
+                <div class="book-bottom">
+                    <strong>$20.00</strong>
+                    <button class="add-btn" data-name="Computer Science Essentials" data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="book-card" data-category="education" data-title="Story Books">
+            <img src="assets/story books.jpg" alt="Story  books">
+            <div class="book-info">
+                <span class="tag">Education</span>
+                <h3>Story  and motivational  books collection</h3>
+                <p>Core concepts explained simply for students and beginners.</p>
+                <div class="book-bottom">
+                    <strong>$20.00</strong>
+                    <button class="add-btn" data-name="Story Books " data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+        
+        <article class="book-card" data-category="education" data-title="Research material">
+            <img src="assets/book.jpg" alt="Research material">
+            <div class="book-info">
+                <span class="tag">Education</span>
+                <h3>Research material</h3>
+                <p>Core concepts explained simply for students and beginners.</p>
+                <div class="book-bottom">
+                    <strong>$20.00</strong>
+                    <button class="add-btn" data-name="Research material" data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <p class="no-results" id="noResults">No books found.</p>
+</section>
+
+<section class="about" id="about">
+    <div>
+        <p class="eyebrow">ABOUT US</p>
+        <h2>A small stall with a big love for books.</h2>
+    </div>
+    <p>
+        PageTurner is a student-friendly online book stall offering carefully selected
+        books for readers, learners and curious minds. Add your favourites to the cart
+        and place a simple demo order directly from this website.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Need help choosing a book?</h2>
+    <p>Email us at <strong>hello@pageturner.example</strong></p>
+</section>
+
+<footer>
+    <p>© 2026 PageTurner Book Stall</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay">
+    <aside class="cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">Place Order</button>
+            <button id="clearCart" class="clear-btn">Clear Cart</button>
+        </div>
+    </aside>
+</div>
+
+<script src="bookstall.js"></script>
+</body>
+</html>
